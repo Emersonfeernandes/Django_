@@ -17,11 +17,11 @@ def favorito(request):
 
     form = UserForm(request.POST or None)
     if form.is_valid():
-        filme1 = form.Cleaned_data.get("Filme 1")
-        filme2 = form.Cleaned_data.get("Filme 2")
-        filme3 = form.Cleaned_data.get("Filme 3")
-        filme4 = form.Cleaned_data.get("Filme 4")
-        filme5 = form.Cleaned_data.get("Filme 5")
+        filme1 = form.cleaned_data.get("Filme 1")
+        filme2 = form.cleaned_data.get("Filme 2")
+        filme3 = form.cleaned_data.get("Filme 3")
+        filme4 = form.cleaned_data.get("Filme 4")
+        filme5 = form.cleaned_data.get("Filme 5")
 
     context = {"form":form, "filme1":filme1, "filme2":filme2, "filme3":filme3, "filme4":filme4, "filme5":filme5
                 , "submitbutton":submitbutton}
