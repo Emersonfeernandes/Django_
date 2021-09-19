@@ -14,7 +14,7 @@ def favorito(request):
     filme3 = str
     filme4 = str
     filme5 = str
-
+#mudei aqui
     form = UserForm(request.POST or None)
     if form.is_valid():
         filme1 = form.cleaned_data.get("Filme 1")
